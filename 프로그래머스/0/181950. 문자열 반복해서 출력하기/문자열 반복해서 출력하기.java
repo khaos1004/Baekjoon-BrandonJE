@@ -1,13 +1,13 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.next();        
-        int n = sc.nextInt();
-        
-        for(int i = 1; i <= n; i++){
-            System.out.print(str);
-        }
+        try
+        (Scanner sc = new Scanner(System.in))
+        {
+            String str = sc.next();        
+            int n = sc.nextInt();        
+            System.out.print(str.repeat(n));
+        }        
     }
 }
